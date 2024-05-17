@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kanit&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Cinzel", serif;
+    background: #e3d9cf;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.button-close > a {
+    color: #0F00FF;
+    font-family: "Cinzel", serif;
+}
+
+.button-close > a:active {
+    color: #0F00FF;
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #965d25;
+    margin: 0;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 15pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e3d9cf;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tombol {
+    display: none;
+    color: #e3d9cf;
+    font-size: 14pt;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 68.5px;
+}
+
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a {
+    padding: 10px;
+    color: #e3d9cf;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a:active {
+    color: #e3d9cf;
+}
+
+.logo:hover {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:active {
+    color: #e3d9cf;
+}
+
+.tombol:hover {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol:active {
+    color: #e3d9cf;
+}
+
+.logo:active {
+    color: #e3d9cf;
+}
+
+.container > .logo {
+    display: flex;
+    letter-spacing: -1px;
+    margin-left: 80px;
+}
+
+footer {
+    margin-top: 322.9px;
+    background-color: #965d25;
+    color: #e3d9cf;
+    text-align: center;
+}
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+		display: none;
+	}
+
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #965d25;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+        transition: all 0.3s ease-in-out;
+	}
+
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+
+	.tombol {
+		display: block;
+	}
+
+    .logo {
+        padding-left: 0;
+        font-size: 18px;
+    }
+    
+    .container {
+        padding-right: 0;
+    }
+
+    .container > .logo {
+        display: flex;
+        margin-right: 289px;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

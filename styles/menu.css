@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kanit&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Cinzel", serif;
+    background: #e3d9cf;
+}
+
+.button-delete, .button-detail, .button-update, .button-close, .button-insert {
+    font-family: "Cinzel", serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #965d25;
+    margin: 0;
+    padding: 20px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 15pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #e3d9cf;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tombol {
+    display: none;
+    color: #e3d9cf;
+    font-size: 14pt;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 1px;
+}
+
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a {
+    padding: 10px;
+    color: #e3d9cf;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a:active {
+    color: #e3d9cf;
+}
+
+.logo:hover {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo:active {
+    color: #e3d9cf;
+}
+
+.tombol:hover {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.tombol:active {
+    color: #e3d9cf;
+}
+
+.logo:active {
+    color: #e3d9cf;
+}
+
+.container > .logo {
+    display: flex;
+    margin-right: 695px;
+    letter-spacing: -1px;
+}
+
+ /* Main */
+.button-update {
+    background-color: #54E346;
+}
+
+.button-update > a:active {
+    color: #0F00FF;
+}
+
+.button-delete {
+    background-color: #FF0303;
+}
+
+.button-detail {
+    background-color: #0F00FF;
+}
+
+.button-detail > a {
+    color: #978e89;
+}
+
+/* Footer */
+footer {
+    background-color: #965d25;
+    color: #e3d9cf;
+    text-align: center;
+    margin-top: 316.9px;
+    bottom: 0;
+}
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+		display: none;
+	}
+
+	.menu.aktif{
+		display:inline-block;
+		position: absolute;
+		top: 64px;
+		background: #965d25;
+		padding: 10px 20px;
+		right: 0;
+		left: 0;
+        transition: all 0.3s ease-in-out;
+	}
+
+	.menu.aktif li a{
+		padding: 10px;
+		display: inline-block !important;
+	}
+
+	.tombol {
+		display: block;
+	}
+
+    .logo {
+        padding-left: 0;
+        font-size: 18px;
+    }
+    
+    .container {
+        padding-right: 0;
+    }
+
+    .container > .logo {
+        display: flex;
+        margin-right: 325px;
+    }
+
+    .table-container {
+        margin-right: 30px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    thead > tr > th {
+        font-size: 15px;
+    }
+
+    tbody > tr > td {
+        font-size: 15px;
+    }
+
+    .button-detail,
+    .button-update,
+    .button-delete {
+        padding: 5px 10px;
+        font-size: 12px;
+        margin: 8px;
+    }
+
+    .button-update {
+        margin-top: -15px;
+    }
+}
